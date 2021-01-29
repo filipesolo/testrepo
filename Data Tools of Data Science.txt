@@ -1,0 +1,174 @@
+
+
+Categorias de Ferramentas de Ciências de Dados
+	Data Management (Gerenciamento de Dados): Persistência e recuperação de dados.
+	Data Integration and Trasnformation (Integração e Transformação de Dados): ETL
+	Data Visualization (Visualização de Dados): Parte inicial do processo de exploração de dados e parte da entraga final.
+	Model Building (Modelo de Construção): Machine Learning e Deep Learning.
+	Model Deployment (Modelo de Deploy): Disponibilizar os modelos de ML e DL para terceiros.
+	Model Monitoring and Assessment (Modelo de Avaliação e Monitoramento): Garante a qualidade dos modelos.
+	Code Asset Management (Gerenciamento e Avaliação do Código): Versinamento colaborativo (Git, Github, etc.) e backup, gerencimento do código.
+	Development Environment (Ambientes de desenvolvimento): IDE.
+	Execution Environment (Ambiente de execução): ferramentas onde se preprocessa os dados, para model training e deploy.
+	Fully Integrated Visual Tools (Ferramentas Visuais Totalmente Integradas): Ferramenta que possue todas as categorias anteriores integradas em
+um só ambiente.
+
+
+Open Source Tools for Data Science
+	Data Management
+			Relational Database: MySQL e PostgreSQL
+			NoSQL: MongoDB, Apache Cassandra e Apache CounchDB.
+			File System: Hadoop HDFS
+			Cloud File System: Ceph
+			ETL: Elasticsearch
+	
+	Data Integration and Trasnformation
+		ETL (ou ELT) - Data refinery and cleansing
+			Apache Airflow: Criado pela AirBnB
+			KubeFlow: roda processos de data science em cima de Kubernetes
+			Apache Kafka: Criada pelo LinkedIn
+			Apache Nifi: possui uma interface gráfica muito boa.
+			Apache SparkSQL: utiliza o padrão ANSI SQL e para escalar clusters de 100 nós.
+			NodeRED: Além de ter um visual amigável, o consumo de recursos é tão baixo que pode rodar em um Raspberry Pi.
+	
+	Data Visualization
+		Hue: criar visualizações utilizando SQL.
+		Kibana: aplicação web de exploração e visualização de dados dentro do Elasticsearch.
+		Apache Superset: aplicação web de exploração e visualização de dados.
+		
+	Model Deployment - Criação de modelos consumíveis via API.
+		Apache PredictionIO: Roda dentro do Apache SparkML
+		Seldon: suportado pelos frameworks: TensorFlow, Apache SparkML, R e schikit-learn. Roda em Kubernetes e RedHat OpenShift.
+		MLeap: roda em SparkML.
+		TensorFlow Service: roda todos os modelos acima.
+		TensorFlow Lite: Carrega aplicações no Raspberry Pi e smartphones.
+		
+	Model Monitoring - Monitora a peformance dos modelos criados.
+		ModelDB: banco de dados de modelos de metadados onde são gravados os modelos criados e podem ser consultados. Disponível no SparkML
+		Prometheus: ferramenta de multi propósitos que pode ser utilizado para monitoramento de modelos.
+		IBM AI Fairness 360: Detecta e mitiga vieses (tendências) em modelos de machine learning.
+		IBM Adversarial Robustness 360 Toolbox: usado para detectar vunerabilidades em adversarial attacks.
+		IBM AI Expainability 360 Toolkit: faz os processos de ML mais entendíveis encontrando dentro dos dados analogias para aprensentar ao usuário.
+		
+	Code Asset Management
+		Git (Padrão do Mercado)
+			Serviços do Git
+				GitHub: hospedagem para sistemas de versionamento de desenvolvimento.
+				GitLab: totalmente open source. Totalmente gerenciado por conta própria.
+		Bitbucket
+				
+	Data Asset Management - Catalogação de dados.
+		Apache Atlas: versinamento, armazenamento e gerenciamento de dados.
+		ODPi Egeria: versinamento, armazenamento e gerenciamento de dados. Solução da Linux Foundation. Ecosistema Opensource.
+		Kylo: Plataforma open source de gerenciamento de data lake.
+	
+	Development Environment
+		Jupyter Notebooks: Ferramenta interativa de programação. IDE
+			Kernels: Não são os Kernels do sistema operacional. Kernels são encapsuladores de diferentes interpretadores interativos de diferentes linguagens de programação.
+		JupyterLab: substituto do Jupyter Notebooks.
+		Apache Zeppelin: mais visual.
+		RStudio: mais velho IDE feito para estatíscos e cientitas de dados. Só roda a linguagem R e Python.
+		Spyder:  IDE semelhante a RStudio porém focada em Python.
+	
+	Execution Environment - Ambiente de execução clusterizado (executa em clusters).
+		Apache Spark: 
+						O mais popular framework. Possue escalabilidade linear, ou seja, dobre os servers nos clusters, dobre a performance dos apps.
+						Batch Data Processing (Carga de processamento de dados).
+		Apache Flink: Stream data processing, processamento de dados em tempo real.
+
+Cloud based tools for data science.
+	Fully Intergrated Visual Tools and Plataforms
+		Watson Studio and Watson Open Scale: combrem completamente o ciclo de vida de desenvolvimento para data science, machine learning e AI tasks.
+		Microsoft Azure Machine Learning: mesmas característica do Watson Studio.
+		H20 driverless AI:
+	
+	Data Management
+		Amazon Web Services DynamoDB: NoSQL. Chave-valor.
+		Cloudant:
+		Apache CounchDB:
+		IBM Db2
+	
+	Data Integration and Trasnformation - ETL ou ELT
+		Informatica: ETL/ELT.
+		IBM Data Refinery: ETL/ELT (faz parte do IBM Watson Studio).
+	
+	Data Visualization
+		Datameer: Solução criada por uma pequena empresa, em comparação aos players grandes (Azure, AWS, etc.).
+		IBM Cognos Analytics: solução da IBM.
+	
+	Model Building
+		IBM Watson Machine Learning: criar e treinar modelos de machine learning.
+		AI Plataform Training: Serviço do Google Cloud Plataform.
+	
+	Model Deployment
+		IBM Watson Machine Learning
+		Amazon SageMaker Model Monitor: monitora modelos de machine learning carregados na plataforma.
+		Watson OpenScale:
+		
+Libraries for Data Science (Bibliotecas para Ciências dos Dados).
+	Definição: Bibliotecas são coleções de funções e métodos que permitem executar uma ampla variedade de 
+ações sem você mesmo ter que escrever o código inteiro.
+		
+		Biblioteca Python:
+			1) Scientific Computing Libraries
+				Pandas: estruturador de dados e ferramentas para limpeza, manipulação e analise dos dados.
+				NumPy: para operações matemáticas.
+				
+			2) Visualization Libraries
+				Matplotlib: o visualizador de dados mais famoso.
+				Seaborn: bom para criação de mapas de calor, series de tempo e violin plot.
+				
+			3) High Level - Machine Learning and Deep Learning
+				Scikit-learn: para modelos estatíscos, como regressão, classificação, clusterização entre outros. (Machine Learning)
+				Keras: construir um modelo de deep learning padrão. Usa GPU para acelerar os gráficos.
+				TensorFlow: melhor utilizado em produção.
+				PyTorch: 
+				
+				*Obs: A biblioteca do Spark tem funcionalidade semelhante aos: Scikit-learn, Pandas e NumPy.
+		Porcessa dados com: Python, R, Scala e SQL.
+					Bibliotecas Scala
+						Vegas: data visualization
+						BigDL: deep learning.
+					
+					Bibliotecas do R
+						ggplot2: visualização dados em R.
+						Keras
+						TensorFlow
+
+API - Application Programming Interfaces
+	O que é um API?
+		É a ponte de comunicação entre aplicativos, softwares, programas, etc.
+		Uma interface programável (através de bibliotecas [funções e métodos]) entre aplicações (programas).
+		
+	API Libraries (Bibliotecas de APIs)
+	REST APIs
+		- Outro tipo de APIs. Elas habilitam você comunicar utilizando a internet, tirando vantagem do armazenamento, grande acesso a dados,
+	algorítimos de inteligência artificial e muitos outros recursos.
+		- O "RE" significa "Representational (Representacional)", o "S" de "State (Estado)", o "T" de "Transfer (Tranferir)"
+		- Nas APIs Rest, seu programa é chamado de "client (cliente)". A API se comunica com um web service que você chama através da internet. Um conjunto de regras governa a Comunicação, Input (Entrada) ou  Request (Requisição) e a Output(Saída) ou Response (Resposta). 
+		- Endpoint (onde estão os Recursos)
+		- O Fluxo das APIs Rest é como a criação de um formulário que é enviado e respondido. HTTP (Formulário) > Request (Tipo de Formulário) > JSON (Detalhe, descrição do pedido [requisição]).
+
+Data Sets - Powering Data Science (Conjunto de Dados - Potencializando Ciências dos Dados)
+	
+Data Asset eXchange DAX
+	base de dados qualificados para consumir em aplicações comerciais.
+
+Machine Learning Models
+	Models (Modelos) são algoritmos.
+	O processo pelo qual o modelo aprende esses pardrões dos dados é chamado de 'model traning (treinamento de modelos)'
+	Três tipos de aprendizagem: aprendizado supervisionado, aprendizado não supervisionado e aprendizado reforçado.
+		
+		1) Aprendizado supervisionado: aplicado em regressão e classificação. Nós inputamos os dados e o modelo faz predições.
+		
+		2) Aprendizado não supervisionado: O modelo cria até os inputs de dados. Não existe interessão humana. Clusterização e detecção de anomalias são dois exemplos deste estilo de aprendizado.
+		
+		3) Aprendizado de reforço: é ligeiramente baseado na maneira de aprendizado dos seres humanos e outros organismos. Os modelos aprendem o melhores conjuntos de ações a tomar, dados seu ambiente atual, no sentido de conseguir mais vantagem possivel dentro de um espaço de tempo. tentativa e erro.
+	
+Deep Learning
+	É um tipo especializado de machine learning. Se refere de forma geral, a um conjunto de modelos e técnicas que tenta simular ligeiramente a maneira que o cerebro humano usa para solucionar um aplo range de problemas.
+	
+
+The Model Asset Exchange MAX
+	No IBM Developer
+	Um recurso open source gratuito para modelos de deep learning. 
